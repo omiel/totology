@@ -1,0 +1,17 @@
+# global ignores
+*.swp
+*~
+.DS_Store
+Thumbs.db
+.project
+.nvm-version
+node_modules
+npm-debug.log
+debug.log
+/atom-shell/
+.idea
+.vagrant
+
+# app specific
+client/.build
+

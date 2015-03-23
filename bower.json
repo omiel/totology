@@ -1,0 +1,13 @@
+{
+  "name": "totology",
+  "version": "0.0.0",
+  "homepage": "https://github.com/dstendardi/totology",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
