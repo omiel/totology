@@ -2,6 +2,8 @@
 <html>
 <head>
     <title>Totology</title>
+    <meta charset="utf-8">
+    <base href="..">
     <!-- inject:css -->
     <!-- endinject -->
 </head>
@@ -9,5 +11,40 @@
 
 <!-- inject:js -->
 <!-- endinject -->
+<script src="../bower_components/ember/ember-template-compiler.js"></script>
+
+<script type="text/x-handlebars">
+  <div class="container">
+    <h1>Totology</h1>
+
+    <form>
+      <input type="text" placeholder="Name of the concept" class="form-control input-lg" />
+    </form>
+
+    <div>
+      {{#each concept in model}}
+        {{concept-list-item preferredLabel=concept.preferredLabel
+                            frequency=concept.frequency
+                            path=concept.path}}
+      {{/each}}
+    </div>
+
+  </div>
+</script>
+<script type="text/x-handlebars" data-template-name="components/concept-list-item">
+  <h2>{{preferredLabel}} <span>({{frequency}})</span></h2>
+  {{#if path.length}}
+  in
+  <ol class="toto-concept-path">
+    {{#each item in path}}
+    <li>
+      {{item.preferredLabel}}
+      <span class="toto-concept-path-separator glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+    </li>
+    {{/each}}
+  </ol>
+  {{/if}}
+</script>
+
 </body>
 </html>

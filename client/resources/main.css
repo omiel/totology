@@ -1,0 +1,11 @@
+.toto-concept-path {
+  list-style: none;
+  display: inline;
+  padding: 0px;
+}
+.toto-concept-path > li {
+  display: inline-block;
+}
+.toto-concept-path > li:last-of-type .toto-concept-path-separator {
+  display: none;
+}

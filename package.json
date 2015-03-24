@@ -21,6 +21,8 @@
     "gulp": "^3.8.11",
     "gulp-develop-server": "^0.4.1",
     "gulp-inject": "^1.2.0",
-    "gulp-nodemon": "^2.0.2"
+    "gulp-nodemon": "^2.0.2",
+    "main-bower-files": "^2.6.2",
+    "stream-series": "^0.1.1"
   }
 }

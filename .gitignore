@@ -6,6 +6,7 @@ Thumbs.db
 .project
 .nvm-version
 node_modules
+/bower_components/
 npm-debug.log
 debug.log
 /atom-shell/
@@ -14,4 +15,3 @@ debug.log
 
 # app specific
 client/.build
-
