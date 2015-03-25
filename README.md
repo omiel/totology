@@ -1,6 +1,6 @@
 # Totology 
 
-Manage your not-so-structured data like a boss !
+Manage your folksonomy like a boss !
 
 ## Setup
 
@@ -12,12 +12,12 @@ vagrant up && vagrant ssh
 
 Go into the share directory 
 
-```
+```bash
 cd /vagrant
 ```
 
 Run docker compose 
 
-```
+```bash
 docker-compose up
 ```
