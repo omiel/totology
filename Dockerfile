@@ -1,4 +1,4 @@
-FROM iojs
+FROM iojs:latest
 
 WORKDIR /app
 ADD . /app

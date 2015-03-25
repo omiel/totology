@@ -6,7 +6,7 @@ dependencies:
   cache_directories:
     - "~/.docker"
   override:
-    - bin/circle-docker-provision.sh elasticsearch
+    - bin/circle-docker-provision.sh elasticsearch iojs
 
 test:
   override:
