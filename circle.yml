@@ -1,0 +1,11 @@
+machine:
+  services:
+    - docker
+
+dependencies:
+  override:
+    - bin/circle-docker-provision.sh elasticsearch
+
+test:
+  override:
+    - ~/.docker/docker-compose run -d web
